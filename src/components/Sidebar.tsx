@@ -3,10 +3,15 @@ import { Link } from "react-router-dom";
 const Sidebar = () => {
     return (
         <>
-            <div className=" hidden sm:w-[20%] h-full box-border py-7">
+            <div className=" hidden lg:block w-[20%] h-full box-border py-7">
                 <div className="logo flex justify-center ">
                     <img className=" w-[45px]" src="https://s3-alpha-sig.figma.com/img/3fdc/4c93/4adc2852b0757a04f517dec2c9d18a05?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bpjlQc4yLAc7msmX13vJMHaBn0IBv0LJKoeeVhguSLB0pU3auyVj5M3KVkCUM~9oMFpCICti7iLaukV3hlI-oY~4MpWuA56Xuob~sFfK7TVPCeEfnzokb6kC3kjXMVBiLsmQgOebY1txb2uEhgO-5AmxfWJNY4kp0kqF42Z3Q8dji6KuBIECEX9G8xGnDgIEVkSOiGSuG0DzyQ9HdIX2VLcFgJji0NhRTJwt4LYvrBGG0pg3x27~TnULVjTe3PVgIvSSQpvGi-F8SAlQBAAxAuZHTGhJUFfjpVHxn3NKqUiJhdK3YDjtEuCn6--wvWUWkYC3o6f~YDpfgeOQKj79fw__" alt="" />
-                    <p className=" text-3xl ">Unity<span className=" text-indigo-500">&#8729;</span></p>
+                    <div className=" flex">
+                        <Link to="/">
+                            <p className=" text-3xl ">Unity</p>
+                        </Link>
+                        <p className=" translate-y-2 text-indigo-500 text-3xl">&#8729;</p>
+                    </div>
                 </div>
                 <div className=" w-[216px] my-7 mx-auto">
                     <div className="adminTools border-b-2 border-solid border-gray-400 py-3-">

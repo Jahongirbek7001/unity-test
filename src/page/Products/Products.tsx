@@ -9,7 +9,7 @@ const Products = () => {
         <>
             <Sidebar />
             <MobileSidebar />
-            <div className=" pt-20 lg:pt-0">
+            <div className="">
                 <div className=" w-full lg:w-[80%] border-solid border-2 px-14 py-7" >
                     <div className=" flex justify-between flex-col lg:flex-row">
                         {/* TITLE */}

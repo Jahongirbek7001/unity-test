@@ -1,11 +1,17 @@
 import { Link } from "react-router-dom"
 
+
 const MobileMenu = () => {
     return (
-        <div className=' fixed top-24 left-0 w-full h-[100vh] bg-white p-4 rounded-lg '>
+        <div className=' w-full h-full p-4 rounded-lg '>
             <div className="logo flex justify-center ">
                 <img className=" w-[45px]" src="https://s3-alpha-sig.figma.com/img/3fdc/4c93/4adc2852b0757a04f517dec2c9d18a05?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bpjlQc4yLAc7msmX13vJMHaBn0IBv0LJKoeeVhguSLB0pU3auyVj5M3KVkCUM~9oMFpCICti7iLaukV3hlI-oY~4MpWuA56Xuob~sFfK7TVPCeEfnzokb6kC3kjXMVBiLsmQgOebY1txb2uEhgO-5AmxfWJNY4kp0kqF42Z3Q8dji6KuBIECEX9G8xGnDgIEVkSOiGSuG0DzyQ9HdIX2VLcFgJji0NhRTJwt4LYvrBGG0pg3x27~TnULVjTe3PVgIvSSQpvGi-F8SAlQBAAxAuZHTGhJUFfjpVHxn3NKqUiJhdK3YDjtEuCn6--wvWUWkYC3o6f~YDpfgeOQKj79fw__" alt="" />
-                <p className=" text-3xl ">Unity<span className=" text-indigo-500">&#8729;</span></p>
+                <div className=" flex">
+                    <Link to="/">
+                        <p className=" text-3xl ">Unity</p>
+                    </Link>
+                    <p className=" translate-y-2 text-indigo-500 text-3xl">&#8729;</p>
+                </div>
             </div>
             <div className=" w-[216px] my-7 mx-auto">
                 <div className="adminTools border-b-2 border-solid border-gray-400 py-3-">
@@ -62,18 +68,7 @@ const MobileMenu = () => {
                         </div>
                     </ul>
                 </div>
-                <div className="profile flex justify-between mt-5">
-                    <div className=" bg-blue-300 rounded-full w-[43px] h-[43px] overflow-hidden">
-                        <img className=" " width="43" height="43" src="https://s3-alpha-sig.figma.com/img/a668/e417/34ff6709e23f91971c6c037ac01880b5?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XhYoeOX2peNG3Z0O9TV2OZhmQS-TGV~ewVVT-PYr7am17baAkYDBJUoUsQp2J0yI5YGRj0ycAmuntgyz1ZKYNJQnMgvPoDAnlxEaFQdudEsWPYbkgLfvxS3nWjFHr6Q1xNyIYGaLOQbrgaFW1wwFalOFf94sjOmKEzMMI1wBuPSQKndB-8MuyrDGHSTLYe6sXS~lHbuCxAu5Rxw8zebmMsC5-xhrUaEmZMNZt4qZqJavTmnsWz~NA6GQoIH2iCqGrc4JSwh3gV6JLgWPHJRg2VmSPu1etNh~puBfIqRyOft2x94sDWZ6~3J7F1pH72JqldcEbiccEcz9Co4APZU~5A__" alt="userImage" />
-                    </div>
-                    <div>
-                        <p className=" font-semibold">Tam Tran</p>
-                        <p className=" text-gray-600">Free account</p>
-                    </div>
-                    <div className=" flex items-center">
-                        <img width="22" height="22" src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/32/external-double-arrow-arrows-dreamstale-lineal-dreamstale-11.png" alt="external-double-arrow-arrows-dreamstale-lineal-dreamstale-11" />
-                    </div>
-                </div>
+
             </div>
         </div>
     )

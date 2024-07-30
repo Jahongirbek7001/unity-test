@@ -1,6 +1,7 @@
 import { useState } from "react";
 import NotificationsComponent from "./NotificationsComponent";
 import MobileMenu from "./MobileMenu";
+import { Link } from "react-router-dom";
 
 
 const MobileSidebar = () => {
@@ -15,11 +16,13 @@ const MobileSidebar = () => {
     }
     return (
         <>
-            <div className=" fixed flex justify-between items-center p-5 sm:hidden bg-white w-full ">
+            <div className=" flex justify-between items-center p-5 sm:hidden bg-white w-full h-full ">
                 {showRecentSearches ? (
                     <img onClick={handleClose} width="50" height="50" src="https://img.icons8.com/ios/50/delete-sign--v1.png" alt="delete-sign--v1" />
                 ) : (
-                    <img onClick={handleInputClick} width="50" height="50" src="https://img.icons8.com/ios/50/menu--v1.png" alt="menu--v1" />
+                    <Link to='/mobileMenu'>
+                        <img onClick={handleInputClick} width="50" height="50" src="https://img.icons8.com/ios/50/menu--v1.png" alt="menu--v1" />
+                    </Link>
                 )
                 }
                 {showRecentSearches && (
