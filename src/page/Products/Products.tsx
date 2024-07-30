@@ -7,9 +7,9 @@ import Sidebar from "../../components/Sidebar";
 const Products = () => {
     return (
         <>
-            <Sidebar />
-            <MobileSidebar />
-            <div className="">
+            <div className='flex flex-col justify-between lg:flex-row'>
+                <Sidebar />
+                <MobileSidebar />
                 <div className=" w-full lg:w-[80%] border-solid border-2 px-14 py-7" >
                     <div className=" flex justify-between flex-col lg:flex-row">
                         {/* TITLE */}
@@ -43,7 +43,6 @@ const Products = () => {
                     </div>
                 </div>
             </div>
-
         </>
     )
 }
